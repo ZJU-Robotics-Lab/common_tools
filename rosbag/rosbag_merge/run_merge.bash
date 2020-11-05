@@ -1,0 +1,1 @@
+python merge.py -v --topics '/lidar_center/velodyne_points /lidar_right/velodyne_points /lidar_left/velodyne_points /xsens/imu_data' merge_imu_lidar.bag /home/qk/Documents/laser_data/qsdjt/car1_2020-09-24-12-03-30.bag /home/qk/Documents/laser_data/qsdjt/car2_2020-09-24-12-03-13.bag
