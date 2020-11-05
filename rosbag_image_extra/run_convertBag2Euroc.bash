@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 echo "run!!!"
-srcPath=/home/qk/Desktop/1016/new_colmap/translation
-destPath=/home/qk/Desktop/1016/new_colmap/translation
-cam0_topic=/camera/image_raw
+srcPath=/media/qk/xinjiajuan/1029/exposure_5000ms 
+destPath=/media/qk/xinjiajuan/1029/exposure_5000ms 
+cam0_topic=/read_image
 cam1_topic=/
 imu_topic=/
 lidar_topic=/
