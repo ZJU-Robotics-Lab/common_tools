@@ -1,0 +1,8 @@
+ply_src_path: /home/qk/Documents/Mvs_dataset/stone_data/pointcloud/new_test/colmap.ply
+ply_tar_path: /home/qk/Documents/Mvs_dataset/stone_data/pointcloud/new_test/stone.ply
+icp_iter_num: 50
+scale_init: 1.02
+scale_step: 0.001
+scale_iter_num: 10
+distance_range: 5
+
