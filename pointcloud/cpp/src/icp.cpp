@@ -365,8 +365,8 @@ int main(int argc, char const *argv[])
     center_ply(cloud_gt, center_gt);
 
     // 为真值点云构建Kdtree
-	pcl::KdTreeFLANN<pcl::PointXYZRGB> kdtree;
-	kdtree.setInputCloud(cloud_gt);
+    pcl::KdTreeFLANN<pcl::PointXYZRGB> kdtree;
+    kdtree.setInputCloud(cloud_gt);
 
     // 遍历Scale计算ICP并输出Score
     PointCloudRGBT::Ptr cloud_icp(new PointCloudRGBT);
