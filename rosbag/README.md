@@ -41,6 +41,8 @@
   
     topic：2D scan topic名称
   
+    注：本脚本将rosbag中的/scan topic中的2D激光雷达转换为3D点云，并输出保存为pcd格式文件，输出路径文件名与rosbag名称相同。
+  
   - #### rosbag合并
   
     ```
