@@ -1,6 +1,6 @@
 - ### rosbag相关
 
-  - #### **rosbag提取image(imu/pointcloud)**
+  - ### **rosbag提取image(imu/pointcloud)**
 
     ```shell
     bash rosbag_image_extra/run_converBag2Euroc.bash
@@ -21,12 +21,32 @@
 
     ​	在bash文件中，修改srcPath为rosbag所在路径，destPath为rosbag解析数据输出路径。bash中的topic名称则代表需要解析的image等topic名称。支持最多一次性解析两个相机、一个激光和一个IMU。输出路径的文件夹名称与rosbag名称相同，文件格式同Euroc。
 
-  - #### rosbag合并
+  - ### **rosbag提取image(imu/pointcloud)**
 
+    ```shell
+    bash rosbag_scan_extra/run_rosbag_scan_extra.sh
+    ```
+
+    **依赖**：ros
+  
+    **使用说明：**
+  
+    ```
+    python rosbag_scan_extra.py \
+    --rosbag /home/qk/Desktop/2Dlaser/2020-11-09-23-16-28.bag \
+    --topic /scan
+    ```
+  
+    rosbag：bag路径
+  
+    topic：2D scan topic名称
+  
+  - #### rosbag合并
+  
     ```
     bash rosbag_merge/run_merge.bash
     ```
-
+  
     
 
 

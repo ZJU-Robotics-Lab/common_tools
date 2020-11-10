@@ -5,6 +5,8 @@ Some useful scripts for data processing
 
   - #### rosbag提取image(imu/pointcloud) [python]
 
+  - #### rosbag提取scan(/scan) [python]
+  
   - #### rosbag合并[python]
   
 - ### pointcloud相关
