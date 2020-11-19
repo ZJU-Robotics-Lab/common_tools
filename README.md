@@ -15,3 +15,4 @@ Some useful scripts for data processing
 
   - #### icp配准并根据点到点误差着色[C++]
 
+- ### [Dynamixel MX-64舵机在Ubuntu配置[Protocol1.0]](Dynamixel/README.md)
