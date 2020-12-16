@@ -47,6 +47,7 @@ if __name__ == "__main__":
     laserProj = LaserProjection()
     scan_num = 0
     print "Start Process ", rosbag_path 
+    scan_list = []
     with rosbag.Bag(rosbag_path, 'r') as bag:
         for topic,msg,t in bag.read_messages():
             if topic == args.topic:
@@ -57,6 +58,11 @@ if __name__ == "__main__":
                     points.append(data[0:3])
                 pcd_name = str(t) + '.pcd'
                 pcd_path = os.path.join(rosbag_pcd_path_root,pcd_name)
+                scan_list.append(pcd_name)
                 write_pcd(pcd_path, points)
+    with open(rosbag_pcd_path_root + '.txt', 'w') as f:
+        for scan in scan_list:
+            f.write(scan + '\n')
+        f.close()
     print 'Process Finish : Total ', scan_num, ' scans!' 
     print 'Pcd File Save in :', rosbag_pcd_path_root 

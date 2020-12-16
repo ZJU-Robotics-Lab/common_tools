@@ -43,12 +43,18 @@
   
     注：本脚本将rosbag中的/scan topic中的2D激光雷达转换为3D点云，并输出保存为pcd格式文件，输出路径文件名与rosbag名称相同。
   
-  - #### rosbag合并
+  - ### rosbag合并
   
     ```
     bash rosbag_merge/run_merge.bash
     ```
   
+  - ### 将文件夹中的image发布为topic
+  
+    ```
+    rosrun image_publisher my_publisher
+    ```
+  
     
-
-
+  
+  
